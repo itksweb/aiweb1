@@ -199,7 +199,15 @@ export const Footer: React.FC<FooterProps> = ({ onNavClick }) => {
             © {new Date().getFullYear()} Roof Real Estate. All rights reserved.
           </div>
           <div className="text-[11px] text-slate-400 text-center sm:text-right">
-            Phone & social handles derived from the reference flyer and editable in <code className="text-emerald-300">src/data/company.ts</code>.
+            website by{' '}
+            <a
+              href="https://wa.me/234806071998"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-emerald-300 hover:text-emerald-200 underline underline-offset-2 transition-colors font-medium"
+            >
+              itksweb
+            </a>
           </div>
         </div>
       </div>

@@ -13,18 +13,15 @@ import { AboutPage } from './components/AboutPage';
 import { ContactSection } from './components/ContactSection';
 import { Footer } from './components/Footer';
 import { PropertyModal } from './components/PropertyModal';
-import { FlyerModal } from './components/FlyerModal';
 import { WhatsAppButton } from './components/WhatsAppButton';
 import { BackToTop } from './components/BackToTop';
 import { Property } from './data/properties';
-import { FileText } from 'lucide-react';
 
 export default function App() {
   const [activeTab, setActiveTab] = useState<'home' | 'properties' | 'about' | 'contact'>('home');
   const [selectedProperty, setSelectedProperty] = useState<Property | null>(null);
   const [isPropertyModalOpen, setIsPropertyModalOpen] = useState(false);
   const [propertyModalMode, setPropertyModalMode] = useState<'details' | 'enquire'>('details');
-  const [isFlyerModalOpen, setIsFlyerModalOpen] = useState(false);
 
   // Sync hash routing
   useEffect(() => {
@@ -113,18 +110,6 @@ export default function App() {
         )}
       </main>
 
-      {/* Floating Flyer Reference Button */}
-      <div className="fixed bottom-22 right-6 z-30">
-        <button
-          onClick={() => setIsFlyerModalOpen(true)}
-          className="flex items-center gap-1.5 px-3 py-2 bg-white text-[#0e382c] border border-slate-200/90 shadow-md hover:shadow-lg rounded-full text-xs font-semibold hover:bg-slate-50 transition-all cursor-pointer hover:scale-102"
-          title="View Original Reference Flyer"
-        >
-          <FileText className="w-3.5 h-3.5 text-[#1b5e43]" />
-          <span className="hidden sm:inline">Reference Flyer</span>
-        </button>
-      </div>
-
       {/* Footer */}
       <Footer onNavClick={handleTabChange} />
 
@@ -140,12 +125,6 @@ export default function App() {
         isOpen={isPropertyModalOpen}
         onClose={() => setIsPropertyModalOpen(false)}
         initialMode={propertyModalMode}
-      />
-
-      {/* Flyer Reference Viewer Modal */}
-      <FlyerModal
-        isOpen={isFlyerModalOpen}
-        onClose={() => setIsFlyerModalOpen(false)}
       />
     </div>
   );
