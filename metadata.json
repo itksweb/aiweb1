@@ -1,0 +1,6 @@
+{
+  "name": "Roof Real Estate",
+  "description": "Modern spaces designed for comfortable living. Premium residential properties starting from $50,000.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
