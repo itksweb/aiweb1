@@ -85,7 +85,7 @@ export const HomeAboutBrief: React.FC<HomeAboutBriefProps> = ({
           <div className="lg:col-span-5 relative">
             <div className="relative rounded-2xl overflow-hidden aspect-4/3 shadow-xl border border-slate-200">
               <img
-                src="/src/assets/images/estate_modern_kitchen_1793865076392.jpg"
+                src="/assets/images/estate_modern_kitchen.jpg"
                 alt="Modern luxury kitchen interior"
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
@@ -203,7 +203,7 @@ export const HomeCTASection: React.FC<HomeCTAProps> = ({ onContactClick }) => {
           {/* Background architectural photo with high opacity scrim */}
           <div className="absolute inset-0 opacity-20 pointer-events-none mix-blend-overlay">
             <img
-              src="/src/assets/images/penthouse_terrace_view_1793865076844.jpg"
+              src="/assets/images/penthouse_terrace_view.jpg"
               alt="Penthouse terrace architectural view"
               className="w-full h-full object-cover"
               referrerPolicy="no-referrer"

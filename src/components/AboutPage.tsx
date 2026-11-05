@@ -70,7 +70,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({
           {/* Decorative Subtle Architecture Geometric Backdrop */}
           <div className="absolute right-0 bottom-0 top-0 w-1/3 opacity-15 pointer-events-none hidden lg:block overflow-hidden">
             <img
-              src="/public/assets/aistudio/Green_Modern_Luxury_Real_Estate_Sale_Flyer_f80aa634.png"
+              src="/assets/aistudio/Green_Modern_Luxury_Real_Estate_Sale_Flyer_f80aa634.png"
               alt="Architecture aesthetic"
               className="w-full h-full object-cover object-left"
             />

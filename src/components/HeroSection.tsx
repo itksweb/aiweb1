@@ -16,7 +16,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
       {/* Background Photography with Sophisticated Dark Forest Gradient Scrim */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/src/assets/images/villa_horizon_dusk_1793865076409.jpg"
+          src="/assets/images/villa_horizon_dusk.jpg"
           alt="Roof Real Estate Modern Architectural Residence at Twilight"
           className="w-full h-full object-cover object-center scale-105 transition-transform duration-1000 ease-out"
           referrerPolicy="no-referrer"
@@ -100,7 +100,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
             <div className="relative rounded-2xl overflow-hidden border border-white/20 bg-gradient-to-b from-white/15 to-white/5 backdrop-blur-md p-5 shadow-2xl space-y-4">
               <div className="relative rounded-xl overflow-hidden aspect-4/3 group">
                 <img
-                  src="/src/assets/images/residence_living_room_1793865077101.jpg"
+                  src="/assets/images/residence_living_room.jpg"
                   alt="Modern architectural living room interior"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   referrerPolicy="no-referrer"

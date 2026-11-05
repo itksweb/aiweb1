@@ -9,7 +9,7 @@ interface FlyerModalProps {
 export const FlyerModal: React.FC<FlyerModalProps> = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
 
-  const flyerPath = '/public/assets/aistudio/Green_Modern_Luxury_Real_Estate_Sale_Flyer_f80aa634.png';
+  const flyerPath = '/assets/aistudio/Green_Modern_Luxury_Real_Estate_Sale_Flyer_f80aa634.png';
 
   return (
     <div className="fixed inset-0 z-50 overflow-y-auto bg-black/80 backdrop-blur-xs flex items-center justify-center p-4">
